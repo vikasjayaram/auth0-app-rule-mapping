@@ -1,0 +1,25 @@
+{
+  "name": "auth0-app-rule-mapping",
+  "version": "1.0.0",
+  "description": "This is a library to find the rules which apply to one particular application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "auth0": "^0.8.2",
+    "dotenv": "^1.2.0",
+    "async": "0.2.10",
+    "lodash": "^4.0.0",
+    "logic-filter-strings": "0.0.2",
+    "string": "^3.3.1"
+  },
+  "keywords": [
+    "auth0",
+    "application",
+    "mapping",
+    "rules"
+  ],
+  "author": "Vikas Jayaram",
+  "license": "MIT"
+}

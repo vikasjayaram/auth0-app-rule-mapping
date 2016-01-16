@@ -3,9 +3,10 @@
 This library provides support to get all the rules that are applied to all the applications using Auth0.
 
 ### Version
+
 1.0.0
 
-## Installation ?
+## Installation
 
 You need npm, nodejs installed.
 

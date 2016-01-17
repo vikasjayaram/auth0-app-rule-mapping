@@ -31,6 +31,32 @@ helpers.appToRulesMapping(function (mapping) {
     // do something.
 });
 ```
+### Tips
+
+If you need to restrict this function to a white list of users then create a rule called whitelist in the Auth0 platform
+```
+function (user, context, callback) {
+    var whitelist = [ 'vikas.ramasethu@gmail.com' ]; //authorized users
+    var userHasAccess = whitelist.some(
+      function (email) {
+        return email === user.email;
+      });
+
+    if (!userHasAccess) {
+      return callback(new UnauthorizedError('Access denied.'));
+    }
+
+    callback(null, user, context);
+}
+```
+Then write a webservice endpoint to fetch the data
+```
+router.get('/getApplicationRules', ensureLoggedIn, function (req, res, next) {
+   helpers.appToRulesMapping(function (mapping) {
+      res.json({result: 'Application To Rules Mapping', data: mapping});
+   });
+});
+```
 ### Sample Outputs
 
 ```

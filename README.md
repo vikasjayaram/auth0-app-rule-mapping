@@ -111,12 +111,14 @@ router.get('/getApplicationRules', ensureLoggedIn, function (req, res, next) {
       }
    ]
 }
-```
+``` 
 
 
 ### Todos
 
  - Write Tests
+ - Improve Parser
+ - Improve Documentation
  - Add Code Comments
 
 License

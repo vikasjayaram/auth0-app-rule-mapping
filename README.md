@@ -15,7 +15,7 @@ npm install git+https://github.com/vikasjayaram/auth0-app-rule-mapping.git --sav
 ```
 
 What you will need?
-* Create a .env file in ths project root directory.
+* Create a .env file in the project root directory.
 * Add the following lines to this file
 ```
 AUTH0_DOMAIN=myDomain

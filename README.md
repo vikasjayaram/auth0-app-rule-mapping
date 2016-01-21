@@ -26,7 +26,9 @@ This global client id and secret is available on https://auth0.com/docs/api/v2 i
 
 Import and use the library
 ```
+var dotenv = require('dotenv');
 var helpers = require('auth0-app-rule-mapping').Auth0Helpers;
+dotenv.load();
 helpers.appToRulesMapping(function (mapping) {
     // do something.
 });
